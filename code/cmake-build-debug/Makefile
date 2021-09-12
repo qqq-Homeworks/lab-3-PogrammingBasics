@@ -117,41 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 3_lab
+# Target rules for targets named code
 
 # Build rule for target.
-3_lab: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3_lab
-.PHONY : 3_lab
+code: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code
+.PHONY : code
 
 # fast build rule for target.
-3_lab/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_lab.dir/build.make CMakeFiles/3_lab.dir/build
-.PHONY : 3_lab/fast
+code/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/build
+.PHONY : code/fast
 
-lab03.o: lab03.cpp.o
-.PHONY : lab03.o
+lab3.o: lab3.cpp.o
+.PHONY : lab3.o
 
 # target to build an object file
-lab03.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_lab.dir/build.make CMakeFiles/3_lab.dir/lab03.cpp.o
-.PHONY : lab03.cpp.o
+lab3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/lab3.cpp.o
+.PHONY : lab3.cpp.o
 
-lab03.i: lab03.cpp.i
-.PHONY : lab03.i
+lab3.i: lab3.cpp.i
+.PHONY : lab3.i
 
 # target to preprocess a source file
-lab03.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_lab.dir/build.make CMakeFiles/3_lab.dir/lab03.cpp.i
-.PHONY : lab03.cpp.i
+lab3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/lab3.cpp.i
+.PHONY : lab3.cpp.i
 
-lab03.s: lab03.cpp.s
-.PHONY : lab03.s
+lab3.s: lab3.cpp.s
+.PHONY : lab3.s
 
 # target to generate assembly for a file
-lab03.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_lab.dir/build.make CMakeFiles/3_lab.dir/lab03.cpp.s
-.PHONY : lab03.cpp.s
+lab3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/lab3.cpp.s
+.PHONY : lab3.cpp.s
+
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... 3_lab"
-	@echo "... lab03.o"
-	@echo "... lab03.i"
-	@echo "... lab03.s"
+	@echo "... code"
+	@echo "... lab3.o"
+	@echo "... lab3.i"
+	@echo "... lab3.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

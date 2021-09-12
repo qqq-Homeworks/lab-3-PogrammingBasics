@@ -14,12 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-3_lab_BINARY_DIR:STATIC=/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code/cmake-build-debug
-
-//Value Computed by CMake
-3_lab_SOURCE_DIR:STATIC=/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -163,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=3_lab
+CMAKE_PROJECT_NAME:STATIC=code
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -229,6 +223,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+code_BINARY_DIR:STATIC=/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code/cmake-build-debug
+
+//Value Computed by CMake
+code_SOURCE_DIR:STATIC=/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code
 
 
 ########################

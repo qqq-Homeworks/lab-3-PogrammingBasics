@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 using namespace std;
 
@@ -62,14 +63,29 @@ int main() {
 
         case 3: {
             {
+                cout << setw(3) << 'x' << setw(9) << 'y'  << setw(8) << 's' << setw(4) << 'n'<< endl;
+                double y, s, s1, eps = 0.000001;
+                int n;
+                for (double x = 0; x <= 1; x += 0.2) {
+                    y = cos(2 * x - 1);
+                    s = 1.0 - pow(2 * x, 2) / 2;
+                    n = 1;
+                    s1 = pow(2 * x, 2) / 2;
+                    while (abs(s1) > eps) {
+                        n++;
+                        s1 = s1 * (-(4 * x * x / (2 * n * (2 * n - 1))));
+                        s += s1;
 
+                    }
+                    cout << setw(3) << x << '|' << setw(9) << y << '|' << setw(8) << s << '|' << setw(1) << n << endl;
+                }
             }
+        }
+            break;
+
+        default:
+            break;
     }
-    break;
 
-    default:
-        break;
-}
-
-return 0;
+    return 0;
 }
