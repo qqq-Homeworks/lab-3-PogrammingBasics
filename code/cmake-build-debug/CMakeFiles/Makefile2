@@ -54,10 +54,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab"
+CMAKE_SOURCE_DIR = "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code/cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/3_lab.dir/clean
 CMakeFiles/3_lab.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_lab.dir/build.make CMakeFiles/3_lab.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3_lab.dir/build.make CMakeFiles/3_lab.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 3_lab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 3_lab"
 .PHONY : CMakeFiles/3_lab.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/3_lab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/3_lab.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/qqq/Documents/University/1 course/ 1 term/programming basics/labs/3 lab/code/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/3_lab.dir/rule
 
 # Convenience name for target.
