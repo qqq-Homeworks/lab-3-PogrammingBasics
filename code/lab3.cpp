@@ -95,7 +95,7 @@ int main()
                 }
                 if (x == 0)
                 {
-                    cout << showpoint << setw(3) << setprecision(2) << x << '|' << setprecision(8) << fixed << setw(11) << y << '|' << setw(11) << setprecision(1) << s << '|' << setw(1) << n << endl;
+                    cout << showpoint << setw(3) << setprecision(2) << x << '|' << setprecision(8) << fixed << setw(11) << y << '|' << setw(11) << setprecision(8) << s << '|' << setw(1) << n << endl;
                 }
                 else
                     cout << showpoint << setw(3) << setprecision(1) << x << '|' << setprecision(8) << fixed << setw(11) << y << '|' << setw(11) << setprecision(8) << s << '|' << setw(1) << n << endl;
@@ -112,8 +112,8 @@ int main()
             double x;
             cout << "n: ";
             cin >> n;
-            cout << '\n'
-                 << "x:";
+
+            cout << "x: ";
             cin >> x;
             double y = 1.0 + x * x / 2, y1 = x * x / 2;
             for (int i = 2; i <= n; i++)
